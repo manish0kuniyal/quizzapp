@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{
+        background: rgb(16, 16, 16);
+    }
+    .container{
+        margin:25vmin auto;padding: 5% 4%;color: aliceblue;
+        width: 80vw;background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+    #question{font-family: 'IBM Plex Sans', sans-serif;
+       font-size: larger;color: aliceblue;
+       background-color: rgb(0, 0, 0);margin-left: 2%;
+    }
+    .timer{
+      border: 2px solid #ffffff;
+      height: 20px;border-radius: 10px;overflow: hidden;
+    }
+    .bar{
+        width: 20%;height: 20px;
+        background-color:  #e100ff;
+        animation:bar 7.2s infinite;;
+    }
+    button{
+        width: 97%;height:7vmin;margin-bottom: 2%;
+       background-color: rgb(16, 16, 16);
+       color:white ;margin-left:2px ;
+      border: none;
+        font-weight: lighter;border-radius: 10px;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    @keyframes bar {
+  0%{width: 0px;}
+  20%{width:25%}
+  40%{width:45% ;}
+  60%{width:65% ;}
+  80%{width:85% ;}
+  100%{width:100% ;}
+}
+</style>
+<body>
+    <div class="container">
+        <div class="timer" ><div id="barL" class="bar"></div></div><br>
+        <div id="question">Loading Question.....</div>
+        <br>
+        <button class="btn" >1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+       <button class="btn" >4</button>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
